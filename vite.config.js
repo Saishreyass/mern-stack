@@ -6,5 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    react()],
+    react()
+    ],
+    base: process.env.VITE_BASE_PATH || '/mern-stack',
 })
